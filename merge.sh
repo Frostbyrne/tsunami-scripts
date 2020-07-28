@@ -1,5 +1,6 @@
 #!/bin/bash
 
+cd /tmp/
 # create the output directory (if it does not exist)
 mkdir -p output
 # remove result from previous runs
@@ -22,3 +23,4 @@ cat output/tmp.json | sed '$ s/.$//' >> output/out.json
 rm output/tmp.json
 # add closing bracket
 echo } >> output/out.json
+echo complete
